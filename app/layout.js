@@ -1,7 +1,8 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import StairTransition from "@/ui/StairTransition";
+import StairTransition from "./transitions/StairTransition";
+import PageTransition from "./transitions/PageTransition";
 
 const typeface = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -20,8 +21,8 @@ export default function RootLayout({ children }) {
         className={`bg-grid-pattern ${typeface.className} antialiased`}
         data-theme="forest">
         <Navbar />
-        {/* <StairTransition /> */}
-        {children}
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );

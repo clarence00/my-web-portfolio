@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import projectsData from "@/data/projects.json";
 import ProjectCard from "@/components/ProjectCard";
-// import ProjectModal from "../components/ProjectModal";
+import ProjectModal from "@/components/ProjectModal";
 
 const importAllImages = (imageFilenames) => {
   return imageFilenames.map((filename) => {
@@ -65,7 +65,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {/* <AnimatePresence>
+      <AnimatePresence>
         {expandedProject !== null && (
           <>
             <ProjectModal
@@ -75,7 +75,7 @@ const Projects = () => {
             />
           </>
         )}
-      </AnimatePresence> */}
+      </AnimatePresence>
     </div>
   );
 };

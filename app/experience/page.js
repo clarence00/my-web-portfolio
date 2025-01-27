@@ -4,11 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import careerData from "@/data/career.json";
+import techStackData from "@/data/techstack.json";
+import toolData from "@/data/tools.json";
 import CareerCard from "@/components/CareerCard";
-// import TechStackCard from "../components/TechStackCard";
-// import careerData from "../assets/media/career.json";
-// import techStackData from "../assets/media/techstack.json";
-// import toolData from "../assets/media/tools.json";
+import TechStackCard from "@/components/TechStackCard";
 
 const Experience = () => {
   const [active, setActive] = useState("Career");
@@ -19,8 +18,8 @@ const Experience = () => {
 
   const links = [
     { name: "Career", path: "./experience" },
-    { name: "Tech Stacks", path: "./techStacks" },
-    { name: "Tools", path: "./tools" },
+    { name: "Tech Stacks", path: "./experience" },
+    { name: "Tools", path: "./experience" },
   ];
 
   return (
@@ -61,7 +60,7 @@ const Experience = () => {
                   ))}
                 </motion.div>
               )}
-              {/* {active === "Tech Stacks" && (
+              {active === "Tech Stacks" && (
                 <motion.div
                   key="Tech Stacks"
                   initial={{ opacity: 0, y: 20 }}
@@ -78,7 +77,7 @@ const Experience = () => {
                   transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }}>
                   <TechStackCard techData={toolData} />
                 </motion.div>
-              )} */}
+              )}
             </AnimatePresence>
           </div>
         </div>

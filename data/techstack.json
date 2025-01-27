@@ -1,1 +1,20 @@
-    
+[
+    { "icon": "nextjs" },
+    { "icon": "react" },
+    { "icon": "javascript" },
+    { "icon": "nodejs" },
+    { "icon": "html" },
+    { "icon": "tailwindcss" },
+    { "icon": "sass" },
+    { "icon": "css" },
+    { "icon": "flutter" },
+    { "icon": "dart" },
+    { "icon": "python" },
+    { "icon": "django" },
+    { "icon": "csharp" },
+    { "icon": "firebase" },
+    { "icon": "sqlite" },
+    { "icon": "mysql" },
+    { "icon": "postgresql" }
+  ]
+  

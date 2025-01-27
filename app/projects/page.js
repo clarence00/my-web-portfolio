@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import projectsData from "@/data/projects.json";
+import ProjectCard from "@/components/ProjectCard";
 // import ProjectModal from "../components/ProjectModal";
-// import ProjectCard from "../components/ProjectCard";
 
 const importAllImages = (imageFilenames) => {
   return imageFilenames.map((filename) => {
@@ -41,7 +41,7 @@ const Projects = () => {
     <div className="flex flex-col items-center">
       <h1 className="text-3xl font-bold p-8 pt-16">Project</h1>
       <div className="grid gap-2 mx-[10%] grid-cols-[repeat(3,_minmax(320px,_1fr))] justify-items-center mb-20">
-        {/* {projects.map((item, index) => (
+        {projects.map((item, index) => (
           // Project Cards
           <div
             key={index}
@@ -63,7 +63,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        ))} */}
+        ))}
       </div>
       {/* <AnimatePresence>
         {expandedProject !== null && (

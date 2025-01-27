@@ -40,7 +40,7 @@ const Icons = ({ type, size, position, className }) => {
     csharp: "bg-customViolet",
     css: "bg-customBlue-dark",
     dart: "bg-customBlue-light",
-    django: "bg-customBreen",
+    django: "bg-customGreen",
     facebook: "bg-customBlue",
     figma: "bg-customOrange",
     firebase: "bg-customYellow",

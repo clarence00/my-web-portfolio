@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Icons from "./Icons";
+import imo from "@/public/images/imodatabase/cover.png";
 
-const ProjectCard = ({ images, title, date, caption, icons }) => {
+const ProjectCard = ({ cover, title, date, caption, icons }) => {
   return (
     <>
       <div className="bg-error-content rounded-lg">
         <Image
-          src={images[0]}
+          src={cover[0]}
           alt=" "
           className="object-contain h-36"
         />

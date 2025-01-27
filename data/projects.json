@@ -1,5 +1,6 @@
 [
     {
+      "cover": ["imodatabase/cover.png"],
       "images": [
         "imodatabase/1.png",
         "imodatabase/2.png",
@@ -17,6 +18,7 @@
       "website": ""
     },
     {
+      "cover": ["letmecook/cover.jpg"],
       "images": [
         "letmecook/1.jpg",
         "letmecook/2.jpg",
@@ -37,6 +39,7 @@
       "website": ""
     },
     {
+      "cover": ["badi/cover.jpg"],
       "images": [
         "badi/1.jpg",
         "badi/2.png",
@@ -55,6 +58,7 @@
       "website": ""
     },
     {
+      "cover": ["mathconnect/cover.jpg"],
       "images": [
         "mathconnect/1.jpg",
         "mathconnect/2.jpg",

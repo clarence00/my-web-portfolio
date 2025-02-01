@@ -1,5 +1,4 @@
 import React from "react";
-
 import Facebook from "@/public/icons/facebook.svg";
 import Instagram from "@/public/icons/instagram.svg";
 import Github from "@/public/icons/github.svg";

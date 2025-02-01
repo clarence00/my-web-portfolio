@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Icons from "./Icons";
-import imo from "@/public/images/imodatabase/cover.png";
 
 const ProjectCard = ({ cover, title, date, caption, icons }) => {
   return (

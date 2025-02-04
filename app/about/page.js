@@ -21,9 +21,9 @@ const About = () => {
             <p className="text-sm pr-4 py-4">
               I am a fresh Computer Engineering graduate with strong passion for
               front-end development. My expertise lies mainly in front-end
-              technologies, particularly Next.js, Tailwind CSS, and Figma, where
-              I create visually appealing and user-friendly interfaces. As an
-              artist, I enjoy blending creativity with technology, and I am
+              technologies, particularly in Next JS, Tailwind CSS, and Figma,
+              where I create visually appealing and user-friendly interfaces. As
+              an artist, I enjoy blending creativity with technology, and I am
               seeking a role where I can apply my skills in both programming and
               design.
             </p>

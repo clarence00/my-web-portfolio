@@ -84,7 +84,7 @@
       "title": "Math Connect",
       "date": "2022",
       "caption":
-        "A fun and interactive puzzle game designed to teach basic math operations through engaging gameplay.",
+        "A fun puzzle game designed to teach basic math operations through interactive gameplay.",
       "details":
       "Math Connect is an educational puzzle game designed for users who wants to learn basic math operations. This is the first game development app we have done for our project. The game was my idea inspired from the different pixel style and io games I have found in the internet. In this project, I created all of the assets and animations in Photoshop, lead the development of both frontend and backend side of the game.",
       "icons": ["csharp", "unity", "photoshop", "androidstudio"],

@@ -77,7 +77,7 @@ const Icons = ({ type, size, position, className }) => {
         style={{ width: size, height: size }}
       />
       <span
-        className={`absolute ${position} text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5  whitespace-nowrap group-hover/icon:text-white group-hover/icon:opacity-100 ${badgeColor}`}>
+        className={`absolute ${position} text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5 whitespace-nowrap group-hover/icon:text-white group-hover/icon:opacity-100 ${badgeColor}`}>
         {type.charAt(0).toUpperCase() + type.slice(1)}
       </span>
     </div>

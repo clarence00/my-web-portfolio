@@ -4,7 +4,7 @@
     "images": ["imodatabase/1.png"],
     "title": "Melodify",
     "date": "2024 - Present",
-    "bgStatus": "bg-error",
+    "status": "progress",
     "caption":
       "My personal music player app that allows me to upload and play my favorite songs.",
     "details":
@@ -23,7 +23,7 @@
       ],
       "title": "IMO Database System",
       "date": "2023 - 2024",
-      "bgStatus": "bg-success",
+      "status": "completed",
       "caption":
         "A digital document database system that automate text recognition and file naming.",
       "details":
@@ -45,7 +45,7 @@
       ],
       "title": "Let Me Cook",
       "date": "2023 - 2024",
-      "bgStatus": "bg-success",
+      "status": "completed",
       "caption":
         "A social media platform for food enthusiasts to share and discover a variety of recipes.",
       "details":
@@ -65,7 +65,7 @@
       ],
       "title": "Badi (Buddy)",
       "date": "2023",
-      "bgStatus": "bg-success",
+      "status": "completed",
       "caption":
         "An engaging pixel-art-inspired note-taking and reviewer app designed for productivity.",
       "details":
@@ -87,7 +87,7 @@
       ],
       "title": "Math Connect",
       "date": "2022",
-      "bgStatus": "bg-success",
+      "status": "completed",
       "caption":
         "A fun puzzle game designed to teach basic math operations through interactive gameplay.",
       "details":

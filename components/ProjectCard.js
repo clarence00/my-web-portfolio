@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Icons from "./Icons";
+import StatusBadge from "./StatusBadge";
 
-const ProjectCard = ({ cover, title, date, caption, icons, bgStatus }) => {
+const ProjectCard = ({ cover, title, date, caption, icons, status }) => {
   return (
     <>
       <div className="bg-error-content rounded-lg">
@@ -15,13 +16,7 @@ const ProjectCard = ({ cover, title, date, caption, icons, bgStatus }) => {
       <div className="flex justify-between mt-2">
         <h1 className="text-md font-bold">{title}</h1>
         <div className="flex gap-2 items-center">
-          <div className="group relative">
-            <div className={`h-2 w-2 rounded-full ${bgStatus}`} />
-            <span
-              className={`absolute translate-y-2 -translate-x-8 text-xs font-bold rounded-lg pointer-events-none opacity-0 px-1.5 py-0.5 whitespace-nowrap group-hover:text-white group-hover:opacity-100 ${bgStatus}`}>
-              {bgStatus === "bg-success" ? "Completed" : "In Progress"}
-            </span>
-          </div>
+          <StatusBadge status={status} />
           <h1 className="text-xs self-center">{date}</h1>
         </div>
       </div>

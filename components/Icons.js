@@ -70,6 +70,7 @@ const Icons = ({ type, size, position, className }) => {
 
   const Icon = iconMap[type];
   const badgeColor = badgeColorMap[type] || "bg-neutral";
+
   return (
     <div className={`flex flex-col items-center group/icon ${className}`}>
       <Icon

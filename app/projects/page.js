@@ -59,7 +59,7 @@ const Projects = () => {
                   caption={item.caption}
                   icons={item.icons}
                   expanded={expandedProject === index}
-                  bgStatus={item.bgStatus}
+                  status={item.status}
                 />
               </div>
             </div>

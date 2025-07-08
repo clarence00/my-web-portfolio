@@ -1,9 +1,24 @@
-import React from "react";
 import Image from "next/image";
 import Icons from "./Icons";
 import StatusBadge from "./StatusBadge";
 
-const ProjectCard = ({ cover, title, date, caption, icons, status }) => {
+interface ProjectCardProps {
+  cover: string[];
+  title: string;
+  date: string;
+  caption: string;
+  icons: string[];
+  status: string;
+}
+
+const ProjectCard = ({
+  cover,
+  title,
+  date,
+  caption,
+  icons,
+  status,
+}: ProjectCardProps) => {
   return (
     <>
       <div className="bg-error-content rounded-lg">

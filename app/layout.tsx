@@ -1,9 +1,9 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar";
 import StairTransition from "./transitions/StairTransition";
 import PageTransition from "./transitions/PageTransition";
-import Footer from "@/components/Footer";
+import Footer from "../components/Footer";
 
 const typeface = Bricolage_Grotesque({
   subsets: ["latin"],

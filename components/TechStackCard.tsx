@@ -1,9 +1,16 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Icons from "./Icons";
 
-const TechStackCard = ({ techData }) => {
-  const [pointerEnabled, setPointerEnabled] = useState();
+interface IconProps {
+  icon: string;
+}
+
+interface TechStackCardProps {
+  techData: IconProps[];
+}
+
+const TechStackCard = ({ techData }: TechStackCardProps) => {
+  const [pointerEnabled, setPointerEnabled] = useState(false);
 
   useEffect(() => {
     setPointerEnabled(false);

@@ -1,19 +1,23 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import projectsData from "@/data/projects.json";
-import ProjectCard from "@/components/ProjectCard";
-import ProjectModal from "@/components/ProjectModal";
+import projectsData from "../../data/projects.json";
+import ProjectCard from "../../components/ProjectCard";
+import ProjectModal from "../../components/ProjectModal";
 
-const importAllImages = (imageFilenames) => {
-  return imageFilenames.map((filename) => {
-    return require(`@/public/images/${filename}`).default;
+type ImageModule = {
+  default: string;
+};
+
+const importAllImages = (imageFilenames: string[]): string[] => {
+  return imageFilenames.map((filename: string): string => {
+    return (require(`../../public/images/${filename}`) as ImageModule).default;
   });
 };
 
 const Projects = () => {
   const [expandedProject, setExpandedProject] = useState(null);
-  const [pointerEnabled, setPointerEnabled] = useState();
+  const [pointerEnabled, setPointerEnabled] = useState(false);
 
   useEffect(() => {
     setPointerEnabled(false);
@@ -30,7 +34,7 @@ const Projects = () => {
     cover: importAllImages(project.cover || []),
   }));
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setExpandedProject(index);
   };
 
@@ -58,7 +62,6 @@ const Projects = () => {
                   date={item.date}
                   caption={item.caption}
                   icons={item.icons}
-                  expanded={expandedProject === index}
                   status={item.status}
                 />
               </div>

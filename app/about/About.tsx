@@ -1,14 +1,14 @@
-import React from "react";
-import Facebook from "@/public/icons/facebook.svg";
-import Instagram from "@/public/icons/instagram.svg";
-import Github from "@/public/icons/github.svg";
-import LinkedIn from "@/public/icons/linkedin.svg";
-import Gallery from "@/public/icons/gallery.svg";
-import AboutCard from "@/components/AboutCard";
+"use client";
+import Facebook from "../../public/icons/facebook.svg";
+import Instagram from "../../public/icons/instagram.svg";
+import Github from "../../public/icons/github.svg";
+import LinkedIn from "../../public/icons/linkedin.svg";
+import Gallery from "../../public/icons/gallery.svg";
+import AboutCard from "../../components/AboutCard";
 
 const About = () => {
   return (
-    <div className="h-screen">
+    <>
       <div className="max-w-[960px] pb-20 m-auto w-full h-full flex flex-col justify-center items-start">
         {/* Name Section */}
         <div className="flex">
@@ -122,7 +122,7 @@ const About = () => {
           </a>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

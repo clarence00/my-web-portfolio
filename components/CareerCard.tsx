@@ -1,6 +1,16 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Icons from "./Icons";
+
+interface CareerCardProps {
+  title: string;
+  href: string;
+  company: string;
+  duration: string;
+  details: string[];
+  icons: string[];
+  size: string;
+  position: string;
+}
 
 const CareerCard = ({
   title,
@@ -11,8 +21,8 @@ const CareerCard = ({
   icons,
   size,
   position,
-}) => {
-  const [pointerEnabled, setPointerEnabled] = useState();
+}: CareerCardProps) => {
+  const [pointerEnabled, setPointerEnabled] = useState(false);
 
   useEffect(() => {
     setPointerEnabled(false);

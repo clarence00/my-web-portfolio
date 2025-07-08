@@ -1,9 +1,13 @@
-"use client";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Icons from "./Icons";
 import Link from "next/link";
 import { motion } from "framer-motion";
+
+interface ProjectModalProps {
+  project: string;
+  onClose: () => void;
+}
 
 const ProjectModal = ({ project, onClose }) => {
   const [activeIndex, setActiveIndex] = useState(0);

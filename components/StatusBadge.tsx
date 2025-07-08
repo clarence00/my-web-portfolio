@@ -1,6 +1,8 @@
-import React from "react";
+interface StatusBadgeProps {
+  status: string;
+}
 
-const StatusBadge = ({ status }) => {
+const StatusBadge = ({ status }: StatusBadgeProps) => {
   const statusColor = status === "completed" ? "bg-success" : "bg-error";
 
   return (

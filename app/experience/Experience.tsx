@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import careerData from "@/data/career.json";
-import techStackData from "@/data/techstack.json";
-import toolData from "@/data/tools.json";
-import CareerCard from "@/components/CareerCard";
-import TechStackCard from "@/components/TechStackCard";
+import careerData from "../../data/career.json";
+import techStackData from "../../data/techstack.json";
+import toolData from "../../data/tools.json";
+import CareerCard from "../../components/CareerCard";
+import TechStackCard from "../../components/TechStackCard";
 
 const Experience = () => {
   const [active, setActive] = useState("Career");
@@ -22,7 +22,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="h-screen">
+    <>
       <div className="flex flex-col items-center mt-20">
         <div className="flex mx-[15%] justify-center gap-12">
           <div className="flex flex-col pt-16 gap-2">
@@ -81,7 +81,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

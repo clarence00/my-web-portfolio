@@ -4,36 +4,49 @@ import Icons from "./Icons";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+interface Project {
+  title: string;
+  date: string;
+  details: string;
+  website: string;
+  images: string[];
+  icons: string[];
+}
+
 interface ProjectModalProps {
-  project: string;
+  project: Project;
   onClose: () => void;
 }
 
-const ProjectModal = ({ project, onClose }) => {
+const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleButtonClick = (index) => {
+  const handleButtonClick = (index: number) => {
     setActiveIndex(index);
-    document
-      .getElementById(`item${index + 1}`)
-      .scrollIntoView({ behavior: "smooth" });
   };
 
   // Auto swipe in carousel
   useEffect(() => {
+    if (project.images.length <= 1) return;
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % project.images.length);
-      document
-        .getElementById(
-          `item${((activeIndex + 1) % project.images.length) + 1}`
-        )
-        .scrollIntoView({ behavior: "smooth" });
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [activeIndex]);
+  }, [project.images.length]);
 
-  const handleBackdropClick = (e) => {
+  // Scroll to the active image in the carousel
+  useEffect(() => {
+    if (project.images.length === 0) return;
+    const el = document.getElementById(
+      `item${(activeIndex % project.images.length) + 1}`
+    );
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activeIndex, project.images.length]);
+
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
       onClose();
     }

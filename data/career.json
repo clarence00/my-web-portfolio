@@ -1,42 +1,41 @@
 [
-    {
-      "title": "Full Stack Developer Intern",
-      "href": "https://achievewithoutborders.com",
-      "company": "Achieve Without Borders, Inc.",
-      "duration": "Aug 2023 - Oct 2023",
-      "details": [
-        "Collaborated with a team to fix bugs and conduct quality assurance for the web application using ReactJS and Firebase before transitioning to the Odoo custom module project.",
-        "Developed custom module application for Odoo V16, including creating admin manual documentation and conducting benchmark tests.",
-        "Followed Scrum methodology, participating in daily stand-up meetings.",
-        "Assigned and documented tickets for project-related tasks and issues."
-      ],
-      "icons": [
-        "react",
-        "python",
-        "nodejs",
-        "tailwindcss",
-        "firebase",
-        "postgresql",
-        "odoo",
-        "vscode",
-        "git"
-      ],
-      "size": "24px",
-      "position": "translate-y-6"
-    },
-    {
-      "title": "Graphic Designer and Digital Marketing Intern",
-      "href": "https://www.imapwebsolutions.com",
-      "company": "I-Map Websolutions, Inc.",
-      "duration": "Aug 2022 - Oct 2022",
-      "details": [
-        "Collaborated with a team to design ad posters and promotional materials for an e-commerce platform.",
-        "Managed company files to ensure smooth business operations.",
-        "Worked with Adobe Photoshop, and Canva."
-      ],
-      "icons": ["canva", "photoshop"],
-      "size": "24px",
-      "position": "translate-y-6"
-    }
-  ]
-  
+  {
+    "title": "Full Stack Developer Intern",
+    "href": "https://achievewithoutborders.com",
+    "company": "Achieve Without Borders, Inc.",
+    "duration": "Aug 2023 - Oct 2023",
+    "details": [
+      "Collaborated with a team to fix bugs and conduct quality assurance for the web application using ReactJS and Firebase before transitioning to the Odoo custom module project.",
+      "Developed custom module application for Odoo V16, including creating admin manual documentation and conducting benchmark tests.",
+      "Followed Scrum methodology, participating in daily stand-up meetings.",
+      "Assigned and documented tickets for project-related tasks and issues."
+    ],
+    "icons": [
+      "react",
+      "python",
+      "nodejs",
+      "tailwindcss",
+      "firebase",
+      "postgresql",
+      "odoo",
+      "vscode",
+      "git"
+    ],
+    "size": "24px",
+    "position": "translate-y-6"
+  },
+  {
+    "title": "Graphic Designer and Digital Marketing Intern",
+    "href": "https://www.imapwebsolutions.com",
+    "company": "I-Map Websolutions, Inc.",
+    "duration": "Aug 2022 - Oct 2022",
+    "details": [
+      "Collaborated with a team to design ad posters and promotional materials for an e-commerce platform.",
+      "Managed company files to ensure smooth business operations.",
+      "Worked with Adobe Photoshop, and Canva."
+    ],
+    "icons": ["canva", "photoshop"],
+    "size": "24px",
+    "position": "translate-y-6"
+  }
+]

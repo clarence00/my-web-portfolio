@@ -19,7 +19,7 @@
     "caption": "My personal music player app that allows me to upload and play my favorite songs.",
     "details": "Melodify is a personal music player application that I developed to manage and play my favorite songs. The app is inspired to be a redesign of popular music players, such as Spotify and Apple Music. I developed Melodify with NextJS and Supabase, leveraging the power of serverless functions and cloud storage to provide a seamless music playback experience.",
     "icons": ["nextjs", "typescript", "tailwindcss", "supabase"],
-    "website": ""
+    "website": "https://melodify-sandy.vercel.app/"
   },
   {
     "cover": ["imodatabase/cover.png"],

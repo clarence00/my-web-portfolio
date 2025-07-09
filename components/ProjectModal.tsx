@@ -62,12 +62,12 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         className="w-screen h-screen z-10 bg-primary-content/70 fixed inset-0"
         onClick={handleBackdropClick}>
         <motion.div
-          className="w-[70%] h-[50%] flex rounded-lg bg-base-200 shadow-black shadow-lg fixed inset-y-[25%] inset-x-[15%]"
+          className="w-[70%] h-[48%] flex rounded-lg bg-base-200 shadow-black shadow-lg fixed inset-y-[25%] inset-x-[15%]"
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.5, opacity: 0 }}
           transition={{ duration: 0.3 }}>
-          <div className="flex px-4 gap-4 items-center">
+          <div className="flex px-8 gap-4 items-center">
             {/* Left side of the modal */}
             <div className="h-80 w-full flex justify-center items-center rounded-md bg-error-content">
               <div className="carousel">
@@ -97,7 +97,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </div>
             </div>
             {/* Right side of the modal */}
-            <div className="flex flex-col justify-between h-full pt-4 pb-1 w-[50%]">
+            <div className="flex flex-col justify-between h-full pt-8 pb-4 w-[50%]">
               <div>
                 <div className="flex justify-between">
                   <h1 className="text-md font-bold">{project.title}</h1>
@@ -111,7 +111,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     Link:{" "}
                     <Link
                       href={project.website}
-                      className="text-sm italic text-primary">
+                      className="text-xs italic text-primary">
                       {project.website}
                     </Link>
                   </h2>

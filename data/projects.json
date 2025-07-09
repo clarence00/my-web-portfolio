@@ -2,12 +2,23 @@
   {
     "cover": ["melodify/cover.png"],
     "images": ["imodatabase/1.png"],
+    "title": "E-Portfolio",
+    "date": "2024 - Present",
+    "status": "progress",
+    "caption": "My personal portfolio website showcasing my projects and skills in development and design.",
+    "details": "This portfolio website is a personal project that I developed to showcase my skills and projects in web development and design. It is built with NextJS, TypeScript, and TailwindCSS, providing a modern and responsive user interface. The website features sections for my projects, skills, and contact information, allowing visitors to learn more about my work and get in touch with me.",
+    "icons": ["nextjs", "typescript", "tailwindcss", "figma"],
+    "website": "https://clarence00.github.io/my-web-portfolio/"
+  },
+  {
+    "cover": ["melodify/cover.png"],
+    "images": ["imodatabase/1.png"],
     "title": "Melodify",
     "date": "2024 - Present",
     "status": "progress",
     "caption": "My personal music player app that allows me to upload and play my favorite songs.",
     "details": "Melodify is a personal music player application that I developed to manage and play my favorite songs. The app is inspired to be a redesign of popular music players, such as Spotify and Apple Music. I developed Melodify with NextJS and Supabase, leveraging the power of serverless functions and cloud storage to provide a seamless music playback experience.",
-    "icons": ["nextjs", "supabase"],
+    "icons": ["nextjs", "typescript", "tailwindcss", "supabase"],
     "website": ""
   },
   {

@@ -36,7 +36,7 @@ const AboutCard = ({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold text-md card-title hover:underline underline-offset-2">
+          className="font-bold text-xl card-title hover:underline underline-offset-2">
           {title}
         </a>
         <div className="flex justify-between -mt-2 italic">

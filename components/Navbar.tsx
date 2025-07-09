@@ -21,17 +21,17 @@ const Navbar = () => {
         <Link
           href="./"
           onClick={() => handleSetActive("About")}
-          className="btn btn-ghost text-xl">
+          className="btn btn-ghost text-xl hover:bg-neutral-content/25">
           Clarence
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 gap-2 py-2.5">
           {links.map((item) => (
             <li key={item.name}>
               <Link
                 href={item.path}
-                className={active === item.name ? "active" : ""}
+                className={`${active === item.name ? "bg-neutral" : ""}`}
                 onClick={() => handleSetActive(item.name)}>
                 {item.name}
               </Link>

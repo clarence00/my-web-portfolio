@@ -59,7 +59,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="w-screen h-screen z-10 bg-primary-content fixed inset-0 bg-opacity-70"
+        className="w-screen h-screen z-10 bg-primary-content/70 fixed inset-0"
         onClick={handleBackdropClick}>
         <motion.div
           className="w-[70%] h-[50%] flex rounded-lg bg-base-200 shadow-black shadow-lg fixed inset-y-[25%] inset-x-[15%]"

@@ -29,7 +29,7 @@ const TechStackCard = ({ techData }: TechStackCardProps) => {
       {techData.map((data, index) => (
         <Icons
           key={index}
-          className="p-7 bg-base-300 rounded-md duration-200 hover:scale-105 hover:border-2 hover:border-white/[0.1]"
+          className="p-7 bg-base-300 rounded-md duration-200 hover:scale-105 hover:border-2 hover:border-white/10"
           type={data.icon}
           size="36px"
           position="translate-y-9"

@@ -1,3 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: forest;
+}
+
+@theme {
+  --background: oklch(20.84% 0.008 17.911);
+  --foreground: "var(--foreground)";
+  --color-customOrange: #f05539;
+  --color-customYellow: #eba32b;
+  --color-customGreen: #006400;
+  --color-customBlue: #2c65f3;
+  --color-customBlue-light: #0aa7cf;
+  --color-customBlue-dark: #3b77a9;
+  --color-customViolet: #984f96;
+  --color-customViolet-light: #9f73d9;
+  --color-customViolet-dark: #7b7fb5;
+  --color-customPink: #cb6699;
+  --color-customPink-dark: #99425b;
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    );
+    background-size: 16px 16px;
+  }
+}

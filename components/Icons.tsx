@@ -30,14 +30,17 @@ const Icons = ({ type, size, position, className }: IconProps) => {
     odoo: require("../public/icons/odoo.svg").default,
     photoshop: require("../public/icons/photoshop.svg").default,
     postgresql: require("../public/icons/postgresql.svg").default,
+    postman: require("../public/icons/postman.svg").default,
     python: require("../public/icons/python.svg").default,
     react: require("../public/icons/react.svg").default,
     sass: require("../public/icons/sass.svg").default,
     sqlite: require("../public/icons/sqlite.svg").default,
     supabase: require("../public/icons/supabase.svg").default,
     tailwindcss: require("../public/icons/tailwindcss.svg").default,
+    typescript: require("../public/icons/typescript.svg").default,
     unity: require("../public/icons/unity.svg").default,
     vscode: require("../public/icons/vscode.svg").default,
+    wordpress: require("../public/icons/wordpress.svg").default,
   };
 
   const badgeColorMap = {
@@ -63,14 +66,17 @@ const Icons = ({ type, size, position, className }: IconProps) => {
     odoo: "bg-customViolet",
     photoshop: "bg-customBlue-light",
     postgresql: "bg-customBlue-light",
+    postman: "bg-customOrange",
     python: "bg-customBlue-dark",
     react: "bg-customBlue-light",
     sass: "bg-customPink",
     sqlite: "bg-customBlue",
     supabase: "bg-customGreen",
     tailwindcss: "bg-customBlue-light",
+    typescript: "bg-customBlue",
     unity: "bg-gray-600",
     vscode: "bg-customBlue-light",
+    wordpress: "bg-gray-600",
   };
 
   const Icon = iconMap[type];

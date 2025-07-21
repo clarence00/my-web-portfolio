@@ -1,9 +1,9 @@
-"use client";
-import { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
-import projectsData from "../../data/projects.json";
-import ProjectCard from "../../components/ProjectCard";
-import ProjectModal from "../../components/ProjectModal";
+'use client';
+import { useState, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import projectsData from '../../data/projects.json';
+import ProjectCard from '../../components/ProjectCard';
+import ProjectModal from '../../components/ProjectModal';
 
 type ImageModule = {
   default: string;
@@ -43,19 +43,21 @@ const Projects = () => {
   };
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl font-bold p-8 pt-16">Project</h1>
-      <div className="grid gap-2 mx-[10%] grid-cols-[repeat(3,minmax(320px,1fr))] justify-items-center mb-20">
+      <h1 className="p-8 pt-16 text-3xl font-bold">Project</h1>
+      <div className="mx-[10%] mb-20 grid grid-cols-[repeat(3,minmax(320px,1fr))] justify-items-center gap-2">
         {projects.map((item, index) => (
           // Project Cards
           <div
             key={index}
             className={`${
-              pointerEnabled ? "pointer-events-auto" : "pointer-events-none"
-            }`}>
-            <div className="p-1 rounded-md duration-200 hover:bg-primary/[0.5] hover:scale-105">
+              pointerEnabled ? 'pointer-events-auto' : 'pointer-events-none'
+            }`}
+          >
+            <div className="hover:bg-primary/[0.5] rounded-md p-1 duration-200 hover:scale-105">
               <div
-                className="p-4 w-[320px] bg-base-300 rounded-md"
-                onClick={() => handleClick(index)}>
+                className="bg-base-300 w-[320px] rounded-md p-4"
+                onClick={() => handleClick(index)}
+              >
                 <ProjectCard
                   cover={item.cover}
                   title={item.title}

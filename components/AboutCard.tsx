@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 interface AboutCardProps {
   href: string;
@@ -28,18 +28,20 @@ const AboutCard = ({
 
   return (
     <div
-      className={`flex flex-col rounded-2xl w-[90%] mx-4 duration-200 hover:scale-105 bg-accent/[0.1] shadow-xl ${
-        pointerEnabled ? "pointer-events-auto" : "pointer-events-none"
-      }`}>
+      className={`bg-accent/[0.1] mx-4 flex w-[90%] flex-col rounded-2xl shadow-xl duration-200 hover:scale-105 ${
+        pointerEnabled ? 'pointer-events-auto' : 'pointer-events-none'
+      }`}
+    >
       <div className="card-body p-4">
         <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold text-xl card-title hover:underline underline-offset-2">
+          className="card-title text-xl font-bold underline-offset-2 hover:underline"
+        >
           {title}
         </a>
-        <div className="flex justify-between -mt-2 italic">
+        <div className="-mt-2 flex justify-between italic">
           <h6 className="text-sm">{subtitle}</h6>
           <h6 className="text-sm">{duration}</h6>
         </div>

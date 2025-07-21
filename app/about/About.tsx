@@ -1,24 +1,24 @@
-"use client";
-import Facebook from "../../public/icons/facebook.svg";
-import Instagram from "../../public/icons/instagram.svg";
-import Github from "../../public/icons/github.svg";
-import LinkedIn from "../../public/icons/linkedin.svg";
-import Gallery from "../../public/icons/gallery.svg";
-import AboutCard from "../../components/AboutCard";
+'use client';
+import Facebook from '../../public/icons/facebook.svg';
+import Instagram from '../../public/icons/instagram.svg';
+import Github from '../../public/icons/github.svg';
+import LinkedIn from '../../public/icons/linkedin.svg';
+import Gallery from '../../public/icons/gallery.svg';
+import AboutCard from '../../components/AboutCard';
 
 const About = () => {
   return (
     <>
-      <div className="max-w-[960px] pb-20 m-auto w-full h-full flex flex-col justify-center items-start">
+      <div className="m-auto flex h-full w-full max-w-[960px] flex-col items-start justify-center pb-20">
         {/* Name Section */}
         <div className="flex">
           <div className="w-[55%] py-4">
             <h2 className="text-lg">An artist and a programmer</h2>
-            <h1 className="font-bold text-5xl">Hello! I&#39;m</h1>
-            <h1 className="font-bold text-5xl text-primary pb-4">
+            <h1 className="text-5xl font-bold">Hello! I&#39;m</h1>
+            <h1 className="text-primary pb-4 text-5xl font-bold">
               Clarence Natividad
             </h1>
-            <p className="text-sm pr-4 py-4">
+            <p className="py-4 pr-4 text-sm">
               I am a fresh Computer Engineering graduate with strong passion for
               front-end development. My expertise lies mainly in front-end
               technologies, particularly in Next JS, Tailwind CSS, and Figma,
@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
           {/* About Card */}
-          <div className="flex flex-col justify-center items-end gap-4">
+          <div className="flex flex-col items-end justify-center gap-4">
             <AboutCard
               href="https://www.pup.edu.ph/"
               title="Polytechnic University of the Philippines"
@@ -49,17 +49,18 @@ const About = () => {
         </div>
 
         {/* Logo Icon Section*/}
-        <div className="flex mt-4 gap-4">
+        <div className="mt-4 flex gap-4">
           <a
             href="https://www.facebook.com/clarence.natividad.96"
             target="_blank"
-            rel="noopener noreferrer">
-            <div className="flex flex-col items-center w-10  group">
+            rel="noopener noreferrer"
+          >
+            <div className="group flex w-10 flex-col items-center">
               <Facebook
-                className="duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110 group-hover:fill-accent fill-base-content"
-                style={{ width: "32px", height: "32px" }}
+                className="group-hover:fill-accent fill-base-content duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110"
+                style={{ width: '32px', height: '32px' }}
               />
-              <div className="text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5 text-customBlue-100 top-full whitespace-nowrap group-hover:text-accent group-hover:opacity-100">
+              <div className="text-customBlue-100 group-hover:text-accent top-full rounded-lg px-1.5 py-0.5 text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100">
                 Facebook
               </div>
             </div>
@@ -67,13 +68,14 @@ const About = () => {
           <a
             href="https://www.instagram.com/nekoshietu_/"
             target="_blank"
-            rel="noopener noreferrer">
-            <div className="flex flex-col items-center w-10 group">
+            rel="noopener noreferrer"
+          >
+            <div className="group flex w-10 flex-col items-center">
               <Instagram
-                className="duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110 group-hover:fill-accent fill-base-content"
-                style={{ width: "32px", height: "32px" }}
+                className="group-hover:fill-accent fill-base-content duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110"
+                style={{ width: '32px', height: '32px' }}
               />
-              <div className="text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5 text-customBlue-100 top-full whitespace-nowrap group-hover:text-accent group-hover:opacity-100">
+              <div className="text-customBlue-100 group-hover:text-accent top-full rounded-lg px-1.5 py-0.5 text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100">
                 Instagram
               </div>
             </div>
@@ -81,13 +83,14 @@ const About = () => {
           <a
             href="https://github.com/clarence00"
             target="_blank"
-            rel="noopener noreferrer">
-            <div className="flex flex-col items-center w-10 group">
+            rel="noopener noreferrer"
+          >
+            <div className="group flex w-10 flex-col items-center">
               <Github
-                className="duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110 group-hover:fill-accent fill-base-content"
-                style={{ width: "32px", height: "32px" }}
+                className="group-hover:fill-accent fill-base-content duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110"
+                style={{ width: '32px', height: '32px' }}
               />
-              <div className="text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5 text-customBlue-100 top-full whitespace-nowrap group-hover:text-accent group-hover:opacity-100">
+              <div className="text-customBlue-100 group-hover:text-accent top-full rounded-lg px-1.5 py-0.5 text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100">
                 Github
               </div>
             </div>
@@ -95,13 +98,14 @@ const About = () => {
           <a
             href="https://www.linkedin.com/in/clarence-c-natividad-068476251/"
             target="_blank"
-            rel="noopener noreferrer">
-            <div className="flex flex-col items-center w-10 group">
+            rel="noopener noreferrer"
+          >
+            <div className="group flex w-10 flex-col items-center">
               <LinkedIn
-                className="duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110 group-hover:fill-accent fill-base-content"
-                style={{ width: "32px", height: "32px" }}
+                className="group-hover:fill-accent fill-base-content duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110"
+                style={{ width: '32px', height: '32px' }}
               />
-              <div className="text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5 text-customBlue-100 top-full whitespace-nowrap group-hover:text-accent group-hover:opacity-100">
+              <div className="text-customBlue-100 group-hover:text-accent top-full rounded-lg px-1.5 py-0.5 text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100">
                 LinkedIn
               </div>
             </div>
@@ -109,13 +113,14 @@ const About = () => {
           <a
             href="https://www.behance.net/clarencnativid"
             target="_blank"
-            rel="noopener noreferrer">
-            <div className="flex flex-col items-center w-10 group">
+            rel="noopener noreferrer"
+          >
+            <div className="group flex w-10 flex-col items-center">
               <Gallery
-                className="duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110 group-hover:fill-accent fill-base-content"
-                style={{ width: "32px", height: "32px" }}
+                className="group-hover:fill-accent fill-base-content duration-200 ease-in group-hover:-translate-y-2 group-hover:scale-110"
+                style={{ width: '32px', height: '32px' }}
               />
-              <div className="text-xs font-bold rounded-lg opacity-0 px-1.5 py-0.5 text-customBlue-100 top-full whitespace-nowrap group-hover:text-accent group-hover:opacity-100">
+              <div className="text-customBlue-100 group-hover:text-accent top-full rounded-lg px-1.5 py-0.5 text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100">
                 Art Portfolio
               </div>
             </div>

@@ -1,11 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "daisyui" {
   themes: forest;
 }
 
 @theme {
   --background: oklch(20.84% 0.008 17.911);
-  --foreground: "var(--foreground)";
+  --foreground: 'var(--foreground)';
   --color-customOrange: #f05539;
   --color-customYellow: #eba32b;
   --color-customGreen: #006400;

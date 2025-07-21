@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import Icons from "./Icons";
+import { useState, useEffect } from 'react';
+import Icons from './Icons';
 
 interface IconProps {
   icon: string;
@@ -23,13 +23,14 @@ const TechStackCard = ({ techData }: TechStackCardProps) => {
 
   return (
     <div
-      className={`card-body grid gap-2 grid-cols-5 justify-items-center ${
-        pointerEnabled ? "pointer-events-auto" : "pointer-events-none"
-      }`}>
+      className={`card-body grid grid-cols-5 justify-items-center gap-2 ${
+        pointerEnabled ? 'pointer-events-auto' : 'pointer-events-none'
+      }`}
+    >
       {techData.map((data, index) => (
         <Icons
           key={index}
-          className="p-7 bg-base-300 rounded-md duration-200 hover:scale-105 hover:border-2 hover:border-white/10"
+          className="bg-base-300 rounded-md p-7 duration-200 hover:scale-105 hover:border-2 hover:border-white/10"
           type={data.icon}
           size="36px"
           position="translate-y-9"

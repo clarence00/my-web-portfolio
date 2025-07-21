@@ -1,18 +1,18 @@
-import { Bricolage_Grotesque } from "next/font/google";
-import "./globals.css";
-import Navbar from "../components/Navbar";
-import StairTransition from "./transitions/StairTransition";
-import PageTransition from "./transitions/PageTransition";
-import Footer from "../components/Footer";
+import { Bricolage_Grotesque } from 'next/font/google';
+import './globals.css';
+import Navbar from '../components/Navbar';
+import StairTransition from './transitions/StairTransition';
+import PageTransition from './transitions/PageTransition';
+import Footer from '../components/Footer';
 
 const typeface = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: ["400", "700"],
+  subsets: ['latin'],
+  weight: ['400', '700'],
 });
 
 export const metadata = {
   title: "Clarence's Web Portfolio",
-  description: "",
+  description: '',
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`bg-grid-pattern ${typeface.className} antialiased`}
-        data-theme="forest">
+        data-theme="forest"
+      >
         <Navbar />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

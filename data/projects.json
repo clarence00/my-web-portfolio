@@ -1,7 +1,12 @@
 [
   {
-    "cover": ["melodify/cover.png"],
-    "images": ["imodatabase/1.png"],
+    "cover": ["portfolio/cover.png"],
+    "images": [
+      "portfolio/1.png",
+      "portfolio/2.png",
+      "portfolio/3.png",
+      "portfolio/4.png"
+    ],
     "title": "E-Portfolio",
     "date": "2024 - Present",
     "status": "progress",

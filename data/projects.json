@@ -1,5 +1,16 @@
 [
   {
+    "cover": ["poketracker/cover.png"],
+    "images": ["poketracker/1.png", "poketracker/2.png", "poketracker/3.png"],
+    "title": "PokeTracker",
+    "date": "2025 - Present",
+    "status": "progress",
+    "caption": "A personal project about comprehensive Pokemon tracking app on popular Pokemon games.",
+    "details": "PokeTracker is a personal project that I am developing to create a comprehensive Pokemon tracking application. The app aims to provide detailed information about various trainers and leaders, their Pokemons together with their stats, abilities, and held item across different popular Pokemon games. Built with NextJS and TailwindCSS, the app features a user-friendly interface and responsive design. The project is still in progress, and I am continuously adding new features and improving the user experience.",
+    "icons": ["nextjs", "typescript", "tailwindcss"],
+    "website": "https://poke-tracker-0.vercel.app/"
+  },
+  {
     "cover": ["portfolio/cover.png"],
     "images": [
       "portfolio/1.png",
@@ -17,12 +28,12 @@
   },
   {
     "cover": ["melodify/cover.png"],
-    "images": ["imodatabase/1.png"],
+    "images": ["melodify/1.png"],
     "title": "Melodify",
-    "date": "2024 - Present",
-    "status": "progress",
+    "date": "2024 - 2025",
+    "status": "cancelled",
     "caption": "My personal music player app that allows me to upload and play my favorite songs.",
-    "details": "Melodify is a personal music player application that I developed to manage and play my favorite songs. The app is inspired to be a redesign of popular music players, such as Spotify and Apple Music. I developed Melodify with NextJS and Supabase, leveraging the power of serverless functions and cloud storage to provide a seamless music playback experience.",
+    "details": "Melodify is a personal music player application that I developed to manage and play my favorite songs. The app is inspired to be a redesign of popular music players, such as Spotify and Apple Music. I developed Melodify with NextJS and Supabase, leveraging the power of serverless functions and cloud storage to provide a seamless music playback experience. However, the project was eventually cancelled due to limitations of Supabase's free tier and my personal time constraints. The app would frequently pause when inactive, requiring me to manually resume the project every now and then just to keep it functional, which is became too much of a hassle to maintain. I have a plan to revisit and rebuild this project in the future once I find a better alternative.",
     "icons": ["nextjs", "typescript", "tailwindcss", "supabase"],
     "website": "https://melodify-sandy.vercel.app/"
   },

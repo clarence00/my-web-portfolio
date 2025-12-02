@@ -2,7 +2,7 @@ import Experience from './Experience';
 
 const ExperiencePage = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <Experience />
     </div>
   );

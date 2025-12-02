@@ -2,7 +2,7 @@ import About from './About';
 
 const AboutPage = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <About />
     </div>
   );

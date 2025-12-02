@@ -9,7 +9,7 @@ import AboutCard from '../../components/AboutCard';
 const About = () => {
   return (
     <>
-      <div className="m-auto flex h-full w-full max-w-[960px] flex-col items-start justify-center pb-20">
+      <div className="m-auto mt-40 flex h-full w-full max-w-[960px] flex-col items-start justify-center">
         {/* Name Section */}
         <div className="flex">
           <div className="w-[55%] py-4">

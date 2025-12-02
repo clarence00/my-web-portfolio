@@ -109,7 +109,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 <h2 className="mt-2 text-xs">{project.details}</h2>
               </div>
               <div className="pb-4">
-                {project.website != '' ? (
+                {project.website != '' && (
                   <h2 className="text-sm italic">
                     Link:{' '}
                     <Link
@@ -119,8 +119,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                       {project.website}
                     </Link>
                   </h2>
-                ) : (
-                  ''
                 )}
                 <div className="divider -my-0"></div>
                 <div className="flex flex-wrap gap-2">

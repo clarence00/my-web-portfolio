@@ -2,7 +2,7 @@ import Projects from './Projects';
 
 const ProjectsPage = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <Projects />
     </div>
   );

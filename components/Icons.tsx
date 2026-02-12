@@ -8,11 +8,13 @@ interface IconProps {
 const Icons = ({ type, size, position, className }: IconProps) => {
   const iconMap = {
     androidstudio: require('../public/icons/androidstudio.svg').default,
+    appwrite: require('../public/icons/appwrite.svg').default,
     canva: require('../public/icons/canva.svg').default,
     csharp: require('../public/icons/csharp.svg').default,
     css: require('../public/icons/css.svg').default,
     dart: require('../public/icons/dart.svg').default,
     django: require('../public/icons/django.svg').default,
+    docker: require('../public/icons/docker.svg').default,
     facebook: require('../public/icons/facebook.svg').default,
     figma: require('../public/icons/figma.svg').default,
     firebase: require('../public/icons/firebase.svg').default,
@@ -40,16 +42,19 @@ const Icons = ({ type, size, position, className }: IconProps) => {
     typescript: require('../public/icons/typescript.svg').default,
     unity: require('../public/icons/unity.svg').default,
     vscode: require('../public/icons/vscode.svg').default,
+    vercel: require('../public/icons/vercel.svg').default,
     wordpress: require('../public/icons/wordpress.svg').default,
   };
 
   const badgeColorMap = {
     androidstudio: 'bg-customGreen',
+    appwrite: 'bg-customPink',
     canva: 'bg-customBlue-light',
     csharp: 'bg-customViolet',
     css: 'bg-customBlue-dark',
     dart: 'bg-customBlue-light',
     django: 'bg-customGreen',
+    docker: 'bg-customBlue-light',
     facebook: 'bg-customBlue',
     figma: 'bg-customOrange',
     firebase: 'bg-customYellow',
@@ -76,6 +81,7 @@ const Icons = ({ type, size, position, className }: IconProps) => {
     typescript: 'bg-customBlue',
     unity: 'bg-gray-600',
     vscode: 'bg-customBlue-light',
+    vercel: 'bg-customGreen',
     wordpress: 'bg-gray-600',
   };
 

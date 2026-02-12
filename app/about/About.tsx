@@ -19,7 +19,7 @@ const About = () => {
               Clarence Natividad
             </h1>
             <p className="py-4 pr-4 text-sm">
-              I am a fresh Computer Engineering graduate with strong passion for
+              I am a Computer Engineering graduate with strong passion for
               front-end development. My expertise lies mainly in front-end
               technologies, particularly in Next JS, Tailwind CSS, and Figma,
               where I create visually appealing and user-friendly interfaces. As

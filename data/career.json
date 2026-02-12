@@ -1,13 +1,29 @@
 [
   {
+    "title": "Freelance Web Designer",
+    "company": "Startup Client",
+    "duration": "Oct 2025 - Nov 2025",
+    "details": [
+      "Drafted and designed responsive static pages using Figma.",
+      "Translated UI/UX deisgn into functional web interface using HTML CSS and TypeScript."
+    ],
+    "icons": ["figma", "html", "css", "typescript"],
+    "size": "24px",
+    "position": "translate-y-6"
+  },
+  {
     "title": "Frontend Web Developer",
     "href": "https://www.linkedin.com/company/macs-doing-business-support-corporation",
     "company": "MAC Doing Business Support Corp.",
     "duration": "Feb 2025 - Present",
     "details": [
-      "Draft designs, wireframes, and prototypes for revamping company websites.",
       "Develop and maintain company websites using ReactJS, NextJS, and TailwindCSS.",
-      "Connect FastAPI to the frontend for data fetching."
+      "Draft designs, wireframes, and interactive prototypes for revamping company websites using Figma.",
+      "Integrate new features and UI improvements based on business requirements and user feedback.",
+      "Connect frontend applications to FastAPI backends for dynamic data fetching.",
+      "Utilize Postman to test and debug API endpoints.",
+      "Create and deploy static websites from scratch.",
+      "Assist DevOps in CI/CD pipeline setup and deployment process."
     ],
     "icons": [
       "react",
@@ -19,6 +35,7 @@
       "vscode",
       "wordpress",
       "postman",
+      "docker",
       "git",
       "canva"
     ],

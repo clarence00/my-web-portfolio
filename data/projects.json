@@ -1,5 +1,16 @@
 [
   {
+    "cover": ["melodify/cover.png"],
+    "images": ["melodify/1.png"],
+    "title": "Melodify v2.0",
+    "date": "2026 - Present",
+    "status": "progress",
+    "caption": "My 2nd attempt in creating music player app that allows me to upload and play my favorite songs.",
+    "details": "This is my second attempt in developing my personal music player app. Melodify is now built with NextJS and Appwrite, utilizing Appwrite’s database managemen, serverless functions, and file storage to handle music uploads and playback.",
+    "icons": ["nextjs", "typescript", "tailwindcss", "appwrite"],
+    "website": "https://melodify.appwrite.network/"
+  },
+  {
     "cover": ["poketracker/cover.png"],
     "images": ["poketracker/1.png", "poketracker/2.png", "poketracker/3.png"],
     "title": "PokeTracker",
@@ -7,7 +18,7 @@
     "status": "progress",
     "caption": "A personal project about comprehensive Pokemon tracking app on popular Pokemon games.",
     "details": "PokeTracker is a personal project that I am developing to create a comprehensive Pokemon tracking application. The app aims to provide detailed information about various trainers and leaders, their Pokemons together with their stats, abilities, and held item across different popular Pokemon games. Built with NextJS and TailwindCSS, the app features a user-friendly interface and responsive design. The project is still in progress, and I am continuously adding new features and improving the user experience.",
-    "icons": ["nextjs", "typescript", "tailwindcss"],
+    "icons": ["nextjs", "typescript", "tailwindcss", "vercel"],
     "website": "https://poke-tracker-0.vercel.app/"
   },
   {

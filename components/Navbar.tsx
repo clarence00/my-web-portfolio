@@ -29,8 +29,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-300 sticky top-0 z-10 px-40 shadow-lg">
-      <div className="flex-1">
+    <div className="navbar bg-base-300 sticky top-0 z-10 w-full justify-center shadow-lg md:px-40">
+      <div className="hidden md:visible md:flex-1">
         <Link
           href="./"
           onClick={() => handleSetActive('About')}

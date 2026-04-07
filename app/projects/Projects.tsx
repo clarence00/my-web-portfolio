@@ -44,7 +44,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="p-8 pt-16 text-3xl font-bold">Project</h1>
-      <div className="mx-[10%] mb-20 grid grid-cols-[repeat(3,minmax(320px,1fr))] justify-items-center gap-2">
+      <div className="mx-[10%] mb-20 grid grid-cols-1 justify-items-center gap-2 md:grid-cols-[repeat(3,minmax(320px,1fr))]">
         {projects.map((item, index) => (
           // Project Cards
           <div

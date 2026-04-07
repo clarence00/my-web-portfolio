@@ -1,18 +1,5 @@
 [
   {
-    "title": "Freelance Web Designer",
-    "href": "",
-    "company": "Freelance",
-    "duration": "Oct 2025 - Nov 2025",
-    "details": [
-      "Drafted and designed responsive static pages using Figma.",
-      "Translated UI/UX design into functional web interface using HTML CSS and TypeScript."
-    ],
-    "icons": ["figma", "html", "css", "typescript"],
-    "size": "24px",
-    "position": "translate-y-6"
-  },
-  {
     "title": "Frontend Web Developer",
     "href": "https://www.linkedin.com/company/macs-doing-business-support-corporation",
     "company": "MAC Doing Business Support Corp.",
@@ -40,6 +27,19 @@
       "git",
       "canva"
     ],
+    "size": "24px",
+    "position": "translate-y-6"
+  },
+  {
+    "title": "Freelance Web Designer",
+    "href": "",
+    "company": "Freelance",
+    "duration": "Oct 2025 - Nov 2025",
+    "details": [
+      "Drafted and designed responsive static pages using Figma.",
+      "Translated UI/UX design into functional web interface using HTML CSS and TypeScript."
+    ],
+    "icons": ["figma", "html", "css", "typescript"],
     "size": "24px",
     "position": "translate-y-6"
   },

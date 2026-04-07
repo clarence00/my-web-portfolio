@@ -35,7 +35,7 @@ const CareerCard = ({
 
   return (
     <div
-      className={`hover:bg-base-300/[0.8] hover: mx-auto my-4 flex flex-col rounded-2xl border-white/10 duration-200 hover:scale-105 hover:border hover:shadow-lg ${
+      className={`hover:bg-base-300/[0.8] hover: mx-auto my-4 flex w-fit flex-col rounded-2xl border-white/10 duration-200 hover:scale-105 hover:border hover:shadow-lg ${
         pointerEnabled ? 'pointer-events-auto' : 'pointer-events-none'
       }`}
     >

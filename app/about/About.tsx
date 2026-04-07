@@ -9,16 +9,16 @@ import AboutCard from '../../components/AboutCard';
 const About = () => {
   return (
     <>
-      <div className="m-auto mt-40 flex h-full w-full max-w-[960px] flex-col items-start justify-center">
+      <div className="m-auto mt-12 flex h-full w-full flex-col items-start justify-center md:mt-40 md:max-w-[960px]">
         {/* Name Section */}
-        <div className="flex">
-          <div className="w-[55%] py-4">
+        <div className="flex w-full flex-col items-center md:flex-row">
+          <div className="w-full py-4 text-center md:w-[55%] md:text-start">
             <h2 className="text-lg">An artist and a programmer</h2>
             <h1 className="text-5xl font-bold">Hello! I&#39;m</h1>
             <h1 className="text-primary pb-4 text-5xl font-bold">
               Clarence Natividad
             </h1>
-            <p className="py-4 pr-4 text-sm">
+            <p className="px-8 py-4 text-sm md:pr-4 md:pl-0">
               I am a Computer Engineering graduate with strong passion for
               front-end development. My expertise lies mainly in front-end
               technologies, particularly in Next JS, Tailwind CSS, and Figma,
@@ -49,7 +49,7 @@ const About = () => {
         </div>
 
         {/* Logo Icon Section*/}
-        <div className="mt-4 flex gap-4">
+        <div className="mt-4 flex w-full justify-center gap-4 md:justify-start">
           <a
             href="https://www.facebook.com/clarence.natividad.96"
             target="_blank"

@@ -24,8 +24,8 @@ const Experience = () => {
   return (
     <>
       <div className="mt-20 flex flex-col items-center">
-        <div className="mx-[15%] flex justify-center gap-12">
-          <div className="flex flex-col gap-2 pt-16">
+        <div className="mx-[15%] flex flex-col justify-center gap-12 md:flex-row">
+          <div className="md: flex flex-col items-center gap-2 pt-16 md:items-start">
             <h1 className="bg-grid-pattern mx-auto mb-4 text-3xl font-bold">
               Experience
             </h1>
@@ -46,7 +46,7 @@ const Experience = () => {
               </motion.div>
             ))}
           </div>
-          <div className="w-[600px]">
+          <div className="w-fit md:w-[600px]">
             <AnimatePresence mode="wait">
               {active === 'Career' && (
                 <motion.div

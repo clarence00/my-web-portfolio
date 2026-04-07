@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-grid-pattern ${typeface.className} antialiased`}
+        className={`bg-grid-pattern w-full ${typeface.className} antialiased`}
         data-theme="forest"
       >
         <Navbar />

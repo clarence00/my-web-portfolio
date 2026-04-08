@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import Icons from './Icons';
+import { usePointer } from '../hooks/useComponents';
 
 interface IconProps {
   icon: string;
@@ -10,16 +10,7 @@ interface TechStackCardProps {
 }
 
 const TechStackCard = ({ techData }: TechStackCardProps) => {
-  const [pointerEnabled, setPointerEnabled] = useState(false);
-
-  useEffect(() => {
-    setPointerEnabled(false);
-    const timer = setTimeout(() => {
-      setPointerEnabled(true);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const { pointerEnabled } = usePointer();
 
   return (
     <div

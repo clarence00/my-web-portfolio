@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { usePointer } from '../hooks/useComponents';
 
 interface AboutCardProps {
   href: string;
@@ -15,16 +15,7 @@ const AboutCard = ({
   details,
   duration,
 }: AboutCardProps) => {
-  const [pointerEnabled, setPointerEnabled] = useState(false);
-
-  useEffect(() => {
-    setPointerEnabled(false);
-    const timer = setTimeout(() => {
-      setPointerEnabled(true);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const { pointerEnabled } = usePointer();
 
   return (
     <div

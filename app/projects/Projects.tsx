@@ -1,46 +1,18 @@
 'use client';
-import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import projectsData from '../../data/projects.json';
 import ProjectCard from '../../components/ProjectCard';
 import ProjectModal from '../../components/ProjectModal';
-
-type ImageModule = {
-  default: string;
-};
-
-const importAllImages = (imageFilenames: string[]): string[] => {
-  return imageFilenames.map((filename: string): string => {
-    return (require(`../../public/images/${filename}`) as ImageModule).default;
-  });
-};
+import { useProjects } from './hooks/useProjects';
 
 const Projects = () => {
-  const [expandedProject, setExpandedProject] = useState(null);
-  const [pointerEnabled, setPointerEnabled] = useState(false);
+  const {
+    projects,
+    pointerEnabled,
+    expandedProject,
+    handleClick,
+    handleClose,
+  } = useProjects();
 
-  useEffect(() => {
-    setPointerEnabled(false);
-    const timer = setTimeout(() => {
-      setPointerEnabled(true);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const projects = projectsData.map((project) => ({
-    ...project,
-    images: importAllImages(project.images || []),
-    cover: importAllImages(project.cover || []),
-  }));
-
-  const handleClick = (index: number) => {
-    setExpandedProject(index);
-  };
-
-  const handleClose = () => {
-    setExpandedProject(null);
-  };
   return (
     <div className="flex flex-col items-center">
       <h1 className="p-8 pt-16 text-3xl font-bold">Project</h1>

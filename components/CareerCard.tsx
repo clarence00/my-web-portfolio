@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Icons from './Icons';
+import { usePointer } from '../hooks/useComponents';
 
 interface CareerCardProps {
   title: string;
@@ -22,16 +23,7 @@ const CareerCard = ({
   size,
   position,
 }: CareerCardProps) => {
-  const [pointerEnabled, setPointerEnabled] = useState(false);
-
-  useEffect(() => {
-    setPointerEnabled(false);
-    const timer = setTimeout(() => {
-      setPointerEnabled(true);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const { pointerEnabled } = usePointer();
 
   return (
     <div

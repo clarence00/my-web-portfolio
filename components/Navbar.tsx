@@ -1,32 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-
-const links = [
-  { name: 'About', path: './' },
-  { name: 'Experience', path: './experience' },
-  { name: 'Projects', path: './projects' },
-];
-
-const getActivePath = (pathname: string) => {
-  if (pathname === '/' || pathname === './') return 'About';
-  if (pathname.startsWith('/experience')) return 'Experience';
-  if (pathname.startsWith('/projects')) return 'Projects';
-  return 'About';
-};
+import { useNavbar } from '../hooks/useNavbar';
 
 const Navbar = () => {
-  const pathname = usePathname();
-  const [active, setActive] = useState(() => getActivePath(pathname));
-
-  useEffect(() => {
-    setActive(getActivePath(pathname));
-  }, [pathname]);
-
-  const handleSetActive = (menuItem: string) => {
-    setActive(menuItem);
-  };
+  const { active, links, handleSetActive } = useNavbar();
 
   return (
     <div className="navbar bg-base-300 sticky top-0 z-10 w-full justify-center shadow-lg md:px-40">

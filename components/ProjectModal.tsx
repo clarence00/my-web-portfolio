@@ -1,17 +1,9 @@
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
 import Icons from './Icons';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-
-interface Project {
-  title: string;
-  date: string;
-  details: string;
-  website: string;
-  images: string[];
-  icons: string[];
-}
+import { useCarousel } from '../hooks/useComponents';
+import { Project } from '../utils/types';
 
 interface ProjectModalProps {
   project: Project;
@@ -19,38 +11,10 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleButtonClick = (index: number) => {
-    setActiveIndex(index);
-  };
-
-  // Auto swipe in carousel
-  useEffect(() => {
-    if (project.images.length <= 1) return;
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % project.images.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [project.images.length]);
-
-  // Scroll to the active image in the carousel
-  useEffect(() => {
-    if (project.images.length === 0) return;
-    const el = document.getElementById(
-      `item${(activeIndex % project.images.length) + 1}`
-    );
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [activeIndex, project.images.length]);
-
-  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
+  const { activeIndex, handleBackdropClick, handleButtonClick } = useCarousel({
+    project,
+    onClose,
+  });
 
   return (
     <>

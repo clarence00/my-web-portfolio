@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import careerData from '../../data/career.json';
 import techStackData from '../../data/techstack.json';
@@ -7,19 +6,10 @@ import toolData from '../../data/tools.json';
 import CareerCard from '../../components/CareerCard';
 import TechStackCard from '../../components/TechStackCard';
 import ExperienceMenuButton from '../../components/ExperienceMenuButton';
+import { useExperience } from './hooks/useExperience';
 
 const Experience = () => {
-  const [active, setActive] = useState('Career');
-
-  const handleSetActive = (menuItem: string) => {
-    setActive(menuItem);
-  };
-
-  const links = [
-    { name: 'Career', path: './experience' },
-    { name: 'Tech Stacks', path: './experience' },
-    { name: 'Tools', path: './experience' },
-  ];
+  const { active, links, handleSetActive } = useExperience();
 
   return (
     <>
